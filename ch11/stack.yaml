@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  web:
+    image: nginx:1.12-alpine
+    ports:
+      - 80:80
+    deploy:
+      replicas: 10
+      update_config:
+        parallelism: 2
+        delay: 10s

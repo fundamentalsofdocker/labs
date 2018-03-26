@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  web:
+    image: nginx:alpine
+    healthcheck:
+      test: ["CMD", "wget", "-qO", "-", "http://localhost"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 15s
