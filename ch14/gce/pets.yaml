@@ -34,16 +34,17 @@ spec:
     app: pets
     service: web
 ---
-apiVersion: apps/v1
-kind: StatefulSet
+apiVersion: apps/v1beta2
+kind: Deployment
 metadata:
   name: db
 spec:
+  serviceName: db
+  replicas: 1
   selector:
     matchLabels:
       app: pets
       service: db
-  serviceName: db
   template:
     metadata:
       labels:
@@ -51,22 +52,10 @@ spec:
         service: db
     spec:
       containers:
-      - image: fundamentalsofdocker/ch08-db:1.0
-        name: db
+      - name: db
+        image: fundamentalsofdocker/ch08-db:1.0
         ports:
         - containerPort: 5432
-        volumeMounts:
-        - mountPath: /var/lib/postgresql/data
-          name: pets-data
-  volumeClaimTemplates:
-  - metadata:
-      name: pets-data
-    spec:
-      accessModes:
-      - ReadWriteOnce
-      resources:
-        requests:
-          storage: 100Mi
 ---
 apiVersion: v1
 kind: Service
