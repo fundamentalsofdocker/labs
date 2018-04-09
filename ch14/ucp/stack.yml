@@ -1,0 +1,21 @@
+version: "3.4"
+services:
+  web:
+    image: fundamentalsofdocker/ch08-web:1.0
+    ports:
+      - 3000:3000
+    networks:
+      - pets-net
+  db:
+    image: fundamentalsofdocker/ch08-db:1.0
+    volumes:
+      - pets-data:/var/lib/postgresql/data
+    networks:
+      - pets-net
+
+volumes:
+  pets-data:
+
+networks:
+  pets-net:
+    driver: overlay
