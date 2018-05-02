@@ -7,7 +7,7 @@ This book starts from scratch, introducing you to Docker fundamentals and settin
 
 By the end of this book, you will have hands-on experience working with Docker containers and orchestrators, such as SwarmKit and Kubernetes.
 ## Instructions and Navigation
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
+All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, ch02.
 
 The code will look like the following:
 ```
