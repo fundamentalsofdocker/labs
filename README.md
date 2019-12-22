@@ -1,5 +1,5 @@
-# Learn Docker - Fundamentals of Docker 18.x
-This is the code repository for [Learn Docker - Fundamentals of Docker 18.x](https://www.packtpub.com/networking-and-servers/learn-docker-fundamentals-docker-18x?utm_source=github&utm_medium=repository&utm_content=9781788997027), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
+# Learn Docker - Fundamentals of Docker 19.x
+This is the code repository for [Learn Docker - Fundamentals of Docker 19.x](TODO add URL), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
 Docker containers have revolutionized the software supply chain in small and big enterprises. Never before has a new technology so rapidly penetrated the top 500 enterprises worldwide. Companies that embrace containers and containerize their traditional mission-critical applications have reported savings of at least 50% in total maintenance costs and a reduction of 90% (or more) in deploying new versions of those applications. Furthermore, they are benefiting from increased security by using containers rather than running applications outside containers.
 
@@ -27,7 +27,7 @@ The hardware requirement is as follows:
 The software requirements are as follows:
 
 * Mac OS-X 10.x or Windows 10 (preferably professional edition)
-* Docker for Windows or Docker for Mac
+* Docker for Desktop for Windows or Mac
 * Docker Toolbox for older Windows versions
 * Modern browser such as Chrome, Safari, Firefox, etc.
 * Access to Powershell console on Windows or Terminal on Mac
