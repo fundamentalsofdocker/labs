@@ -1,0 +1,1 @@
+The `docker-compose.yml` file in this directory can be used to test the application locally.
